@@ -7,12 +7,12 @@
     
     <style>
         #border{
-            height: 60px;
-            width: 440px;
+            height: 95px;
+            width: 830px;
             border-left: 2px solid #1d1a1a;
             color: #00ffff;
             background-color: #908c8c;
-            font-size: 50px;
+            font-size: 80px;
         }
         #table{
             text-align: center;
@@ -26,7 +26,14 @@
             padding: 5px;
         }
         #best{
-            filter: drop-shadow(10px 10px 20px rgb(136, 220, 11));
+            filter: drop-shadow(10px 10px 20px #88dc0b);
+        }
+        #tableHead{
+            
+            font-size: 30px;
+        }
+        .titleColumn{
+            font-size: 20px;
         }
     </style>
     <div id="border">
@@ -36,20 +43,25 @@
 <body>
     <div id="table">
         <table>
+            <tr id="tableHead">
+                <th style="padding-left: 100px;
+                padding-right: 100px;">Title</th>
+                <th>Video URL</th>
+            </tr>
             <tr>
-                <th>Html</th>
+                <th class="titleColumn">Html</th>
                 <td>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=CPp54RBnzTl4WEN-&amp;list=PLu71SKxNbfoDBNF5s-WH6aLbthSEIMhMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </td>
             </tr>
             <tr>
-                <th>JavaScript</th>
+                <th class="titleColumn">JavaScript</th>
                 <td>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=NrAawwdD14M3xxPJ&amp;list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </td>
             </tr>
             <tr>
-                <th>React</th>
+                <th class="titleColumn">React</th>
                 <td>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?si=IWWUtWFsFletfx5a&amp;list=PLu71SKxNbfoDqgPchmvIsL4hTnJIrtige" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </td>
